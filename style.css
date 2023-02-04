@@ -1,6 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Work+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,12 +16,14 @@
   --light-color: #eaeaeaa4;
   --primary-color: #08d9d6;
   --secondary-color: #ff2e63;
-  --font: 'Crimson Text', serif;
-  --secondary-font: 'Work Sans', sans-serif;
+  --font: "Crimson Text", serif;
+  --secondary-font: "Work Sans", sans-serif;
 }
 body {
-  background: var(--bg);
-  color: var(--color);
+  /* background: var(--bg);
+  color: var(--color); */
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
 }
 .center {
   display: flex;
@@ -33,14 +35,14 @@ body {
 #main {
   width: 100%;
   /* height: 50em; */
-    padding: 5em 0;
+  padding: 5em 0;
   backdrop-filter: blur(1px);
   backdrop-filter: contrast(250px);
   position: relative;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
 }
-#main::before {
+/* #main::before {
   content: "";
   width: 100%;
   height: 30em;
@@ -48,7 +50,7 @@ body {
   right: 25em;
   z-index: -1;
   background: rgb(19, 19, 19);
-}
+} */
 #main .user_info {
   margin: 0 30px;
 }
@@ -63,8 +65,8 @@ body {
   margin-bottom: 1.5em;
 }
 #main .user_img img {
-  width: 30em;
-  height: 30em;
+  width: 20em;
+  height: 20em;
   border-radius: 50%;
   margin: 0 30px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.479);
@@ -91,15 +93,15 @@ body {
 /* ---------- about section ---------- */
 .about {
   width: 100%;
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
   padding: 6em 0;
 }
-.about div{
+.about div {
   width: 40%;
   flex-direction: column;
   align-items: flex-start;
 }
-.about img{
+.about img {
   width: 25em;
   margin: 2em;
 }
@@ -210,7 +212,7 @@ body {
   padding: 2em 0;
   position: relative;
   flex-direction: column;
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
   overflow-x: hidden;
 }
 .projects::before,
@@ -219,17 +221,9 @@ body {
   position: absolute;
   width: 20em;
   height: 20em;
-  background: #f953c6; 
-  background: -webkit-linear-gradient(
-    to right,
-    #b91d73,
-    #f953c6
-  ); 
-  background: linear-gradient(
-    to right,
-    #b91d73,
-    #f953c6
-  ); 
+  background: #f953c6;
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
+  background: linear-gradient(to right, #b91d73, #f953c6);
   border-radius: 50%;
 }
 .projects::before {
@@ -239,17 +233,9 @@ body {
 .projects::after {
   right: -10em;
   top: 8em;
-  background: #8e2de2; 
-  background: -webkit-linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); 
-  background: linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); 
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
 }
 .projects .project_heading {
   margin-bottom: 0.4em;
@@ -284,7 +270,7 @@ body {
 .projects .container .main_box .box :is(h1, p) {
   margin-bottom: 0.5em;
 }
-.projects .container .main_box .box p{
+.projects .container .main_box .box p {
   opacity: 0.6;
 }
 .projects .container .main_box .box .links a {
@@ -312,33 +298,32 @@ body {
 }
 
 /* ---------- footer ---------- */
-footer{
-    width: 100%;
-    padding: 3em 0;
-    flex-direction: column;
-    background: #1a1a1a;
+footer {
+  width: 100%;
+  padding: 3em 0;
+  flex-direction: column;
+  /* background: #1a1a1a; */
 }
-footer .social_media_icons{
-    margin-top: 1em;
+footer .social_media_icons {
+  margin-top: 1em;
 }
-footer .social_media_icons a{
-    margin: 0 .8em;
-    border-radius: 50px;
+footer .social_media_icons a {
+  margin: 0 0.8em;
+  border-radius: 50px;
 }
-footer .social_media_icons a i{
-    font-size: 1.8em;
-    padding: 0.2em;
-    transition: color 0.4s;
+footer .social_media_icons a i {
+  font-size: 1.8em;
+  padding: 0.2em;
+  transition: color 0.4s;
 }
-footer .social_media_icons a:hover i{
-    font-size: 1.8em;
-    padding: 0.2em;
-    color: rgba(54, 54, 54, 0.966);
+footer .social_media_icons a:hover i {
+  font-size: 1.8em;
+  padding: 0.2em;
+  color: rgba(54, 54, 54, 0.966);
 }
-
 
 /* --------- toggle ---------- */
-.toggle{
+.toggle {
   width: 200px;
   height: 200px;
   backdrop-filter: blur(20px);
@@ -350,24 +335,24 @@ footer .social_media_icons a:hover i{
   z-index: 100;
   flex-direction: column;
   justify-content: space-evenly;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-.toggle .box a{
+.toggle .box a {
   flex-direction: column;
   text-decoration: none;
 }
-.toggle .box a i{
+.toggle .box a i {
   font-size: 18px;
 }
-.toggle .box a p{
+.toggle .box a p {
   font-size: 12px;
-  margin-top: 8px
+  margin-top: 8px;
 }
-.toggle .box:nth-child(2){
+.toggle .box:nth-child(2) {
   width: 100%;
   justify-content: space-evenly;
 }
-.toggle .box input{
+.toggle .box input {
   width: 40px;
   height: 40px;
   -webkit-appearance: none;
@@ -376,7 +361,7 @@ footer .social_media_icons a:hover i{
   background: rgb(31, 31, 31);
   border: 6px solid rgba(255, 255, 255, 0.459);
 }
-.toggle.active .box input{
+.toggle.active .box input {
   position: absolute;
   top: 0;
   left: 0;
@@ -384,7 +369,7 @@ footer .social_media_icons a:hover i{
   height: 100%;
   border-radius: 15px;
 }
-.toggle.active{
+.toggle.active {
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -402,7 +387,7 @@ footer .social_media_icons a:hover i{
   .about {
     flex-direction: column;
   }
-  .about div{
+  .about div {
     width: 70%;
   }
 }
@@ -412,7 +397,7 @@ footer .social_media_icons a:hover i{
     padding: 5em 0;
   }
   .skill_box .box {
-    margin: 2em .6em;
+    margin: 2em 0.6em;
     width: 12em;
     height: 8em;
   }
@@ -434,18 +419,18 @@ footer .social_media_icons a:hover i{
   body {
     font-size: 13px;
   }
-  .skill_box .box{
+  .skill_box .box {
     margin: 2em 0.5em;
     width: 12em;
     height: 8em;
   }
 }
 @media (max-width: 450px) {
-  #main .user_img img{
+  #main .user_img img {
     width: 20em;
     height: 20em;
   }
-  .projects .container .main_box .icon{
+  .projects .container .main_box .icon {
     height: 100%;
     padding: 0.2em;
   }
@@ -458,7 +443,7 @@ footer .social_media_icons a:hover i{
 }
 
 @media (max-width: 350px) {
-  body{
+  body {
     font-size: 8px;
   }
 }
