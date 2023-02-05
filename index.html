@@ -21,7 +21,7 @@
       <div id="particles-js"></div>
       <div class="user_info">
         <h1 class="user_name">Nyoman Sastrawan</h1>
-        <p>Electrical Engineer & Web Developer</p>
+        <p class="lead"><strong></strong></p>
         <a href="#About" class="btn">About Us</a>
       </div>
       <div class="user_img">
@@ -227,6 +227,16 @@
         e.addEventListener("click", () => {
           toggle.classList.toggle("active");
         });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", {
+        duration: 2,
+        delay: 1.5,
+        text: "Electrical Engineer | Freelane Web Developer",
       });
     </script>
   </body>
