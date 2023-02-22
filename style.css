@@ -65,6 +65,18 @@ body {
   font-size: 5em;
   /* color: #1d1d1d; */
 }
+.user_name {
+  text-shadow: 3px 3px 0px #ffffff, 8px 8px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+  animation: zoom 10s ease 500ms forwards;
+}
 #main p {
   font-family: var(--secondary-font);
   font-size: 1.5em;
@@ -116,6 +128,21 @@ body {
 .about_heading {
   font-size: 6em;
   font-family: var(--font);
+  text-shadow: 3px 3px 0px #ffffff, 8px 8px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+  animation: zoom 10s ease 500ms forwards;
 }
 .about p {
   font-size: 1.4em;
@@ -212,6 +239,16 @@ body {
 .skill_head {
   font-size: 6em;
   font-family: var(--font);
+  text-shadow: 3px 3px 0px #ffffff, 8px 8px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+  animation: zoom 10s ease 500ms forwards;
 }
 
 /* ---------- projects ---------- */
