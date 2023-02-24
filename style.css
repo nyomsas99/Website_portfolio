@@ -29,6 +29,7 @@ body {
   background-image: url("./img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  backdrop-filter: blur(20px);
 }
 .center {
   display: flex;
