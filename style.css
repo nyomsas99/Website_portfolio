@@ -26,7 +26,8 @@ body {
   background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%); */
   /* background-color: #3eecac;
   background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%); */
-  background-image: url("./img/bg.jpg");
+  /* background-image: url("./img/bg.jpg"); */
+  background-image: linear-gradient(90deg, #22c1c3 0%, #fdbb2d 100%);
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(20px);
