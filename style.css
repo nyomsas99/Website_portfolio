@@ -20,17 +20,8 @@
   --secondary-font: "Work Sans", sans-serif;
 }
 body {
-  /* background: var(--bg);
-  color: var(--color); */
-  /* background-color: #00dbde;
-  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%); */
-  /* background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%); */
-  /* background-image: url("./img/bg.jpg"); */
-  background-image: linear-gradient(90deg, #22c1c3 0%, #fdbb2d 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(20px);
+  background: var(--bg);
+  color: var(--color);
 }
 .center {
   display: flex;
@@ -41,31 +32,13 @@ body {
 /* ---------- main section ---------- */
 #main {
   width: 100%;
-  height: 100%;
+  /* height: 50em; */
   padding: 5em 0;
-
   backdrop-filter: blur(1px);
   backdrop-filter: contrast(250px);
   position: relative;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
-}
-/* #main::before {
-  content: "";
-  width: 100%;
-  height: 30em;
-  position: absolute;
-  right: 25em;
-  z-index: -1;
-  background: rgb(19, 19, 19);
-} */
-#main .user_info {
-  margin: 0 30px;
-}
-#main .user_info .user_name {
-  font-family: var(--font);
-  font-size: 5em;
-  /* color: #1d1d1d; */
 }
 .user_name {
   text-shadow: 3px 3px 0px #ffffff, 8px 8px 0px rgba(0, 0, 0, 0.1);
@@ -79,16 +52,22 @@ body {
   color: rgba(0, 0, 0, 0.08);
   animation: zoom 10s ease 500ms forwards;
 }
+#main .user_info {
+  margin: 0 30px;
+}
+#main .user_info .user_name {
+  font-family: var(--font);
+  font-size: 5em;
+}
 #main p {
   font-family: var(--secondary-font);
   font-size: 1.5em;
   color: var(--light-color);
-  /* color: #1d1d1d; */
   margin-bottom: 1.5em;
 }
 #main .user_img img {
-  width: 25em;
-  height: 25em;
+  width: 30em;
+  height: 30em;
   border-radius: 50%;
   margin: 0 30px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.479);
@@ -115,7 +94,7 @@ body {
 /* ---------- about section ---------- */
 .about {
   width: 100%;
-  /* background: #1a1a1a; */
+  background: #1a1a1a;
   padding: 6em 0;
 }
 .about div {
@@ -259,7 +238,7 @@ body {
   padding: 2em 0;
   position: relative;
   flex-direction: column;
-  /* background: #1a1a1a; */
+  background: #1a1a1a;
   overflow-x: hidden;
 }
 .projects::before,
@@ -349,7 +328,7 @@ footer {
   width: 100%;
   padding: 3em 0;
   flex-direction: column;
-  /* background: #1a1a1a; */
+  background: #1a1a1a;
 }
 footer .social_media_icons {
   margin-top: 1em;
