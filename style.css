@@ -20,7 +20,14 @@
   --secondary-font: "Work Sans", sans-serif;
 }
 body {
-  background: var(--bg);
+  /* background: var(--bg); */
+  /* background-image: linear-gradient(#22c1c3, #fdbb2d); */
+
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+  background-repeat: no-repeat;
+
   color: var(--color);
 }
 .center {
@@ -94,7 +101,7 @@ body {
 /* ---------- about section ---------- */
 .about {
   width: 100%;
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
   padding: 6em 0;
 }
 .about div {
@@ -238,7 +245,7 @@ body {
   padding: 2em 0;
   position: relative;
   flex-direction: column;
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
   overflow-x: hidden;
 }
 .projects::before,
