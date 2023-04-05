@@ -12,16 +12,39 @@
 :root {
   --bg: #252a34;
   --bg-dark: #1d1d1d;
-  --color: #eaeaea;
+  /* --color: #eaeaea; */
   --light-color: #eaeaeaa4;
   --primary-color: #08d9d6;
   --secondary-color: #ff2e63;
   --font: "Crimson Text", serif;
   --secondary-font: "Work Sans", sans-serif;
 }
-body {
-  /* background: var(--bg); */
-  /* background-image: linear-gradient(#22c1c3, #fdbb2d); */
+html {
+  --s: 150px;
+  --c1: #ff847c;
+  --c2: #e84a5f;
+  --c3: #fecea8;
+  --c4: #99b898;
+
+  background: conic-gradient(
+      from 45deg at 75% 75%,
+      var(--c3) 90deg,
+      var(--c1) 0 180deg,
+      #0000 0
+    ),
+    conic-gradient(from -45deg at 25% 25%, var(--c3) 90deg, #0000 0),
+    conic-gradient(from -45deg at 50% 100%, #0000 180deg, var(--c3) 0),
+    conic-gradient(
+      from -45deg,
+      var(--c1) 90deg,
+      var(--c2) 0 225deg,
+      var(--c4) 0
+    );
+
+  background-size: var(--s) var(--s);
+}
+/* body {
+  
 
   background-color: #00dbde;
   background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
@@ -29,7 +52,7 @@ body {
   background-repeat: no-repeat;
 
   color: var(--color);
-}
+} */
 .center {
   display: flex;
   justify-content: center;
@@ -336,6 +359,7 @@ footer {
   padding: 3em 0;
   flex-direction: column;
   background: #1a1a1a;
+  color: #ffffff;
 }
 footer .social_media_icons {
   margin-top: 1em;
