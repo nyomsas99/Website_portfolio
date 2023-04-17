@@ -358,7 +358,8 @@ footer {
   width: 100%;
   padding: 3em 0;
   flex-direction: column;
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
+  background: linear-gradient(#d3f5cf, #a8dbfa, #635ee2);
   color: #ffffff;
 }
 footer .social_media_icons {
