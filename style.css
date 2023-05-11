@@ -19,7 +19,7 @@
   --font: "Crimson Text", serif;
   --secondary-font: "Work Sans", sans-serif;
 }
-html {
+/* html {
   --s: 150px;
   --c1: #ff847c;
   --c2: #e84a5f;
@@ -42,17 +42,10 @@ html {
     );
 
   background-size: var(--s) var(--s);
-}
-/* body {
-  
-
-  background-color: #00dbde;
-  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
-
-  background-repeat: no-repeat;
-
-  color: var(--color);
 } */
+body {
+  background-image: linear-gradient(#d3f5cf, #a8dbfa, #635ee2);
+}
 .center {
   display: flex;
   justify-content: center;
